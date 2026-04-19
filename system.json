@@ -1,0 +1,57 @@
+{
+  "id": "dark-heresy-1e",
+  "title": "Dark Heresy 1ère Édition",
+  "description": "Système FULLY AUTOMATISÉ pour Dark Heresy 1e – D100, Degrés de Réussite, Destin, Corruption, Perils of the Warp. Fidèle au livre de base.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Marc-André Potheret - Wilks",
+      "url": "https://github.com/toncompte/dark-heresy-1e"
+    }
+  ],
+  "esmodules": ["scripts/dark-heresy.mjs"],
+  "styles": ["styles/dark-heresy.css"],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {},
+      "creature": {}
+    },
+"Item": {
+  "career": {},
+  "skill": {},
+  "talent": {},
+  "weapon": {},
+  "armor": {},
+  "gear": {},
+  "cybernetic": {},
+  "psychicPower": {}
+}
+  },
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "stats.wounds.value",
+  "secondaryTokenAttribute": "stats.fate.value",
+  "packs": [
+    {
+      "name": "skills",
+      "label": "Compétences",
+      "path": "packs/skills.db",
+      "type": "Item",
+      "system": "dark-heresy-1e"
+    }
+  ]
+}
